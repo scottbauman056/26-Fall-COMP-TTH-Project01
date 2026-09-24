@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Film Site - Favorite Directors</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+		<h1>My Film Site</h1>
+		<nav role="navigation">
+			<ul>
+				<li><a href="index.html" title="Home page">Home</a></li>
+				<li><a href="films.html" title="Favorite Films">My Favorite Films</a></li>
+				<li><a href="directors.html" class="current" title="Favorite Directors">My Favorite Directors</a></li>
+				<li><a href="watchlist.html" title="Watchlist">My Watchlist</a></li>
+			</ul>
+		</nav>
+		<div class="spacer"></div>
+	</header>
+    <main role="main">
+      <article role="article">
+	  <div class="table-wrap">
+        <table>
+			<caption style="font-size: 1.75em; font-weight: bold">My Favorite Film Directors</caption>
+			<tr>
+			
+			<!-- Colspan is a function of tables that effectively merges cells horizontally, it's used in this case to allow the 'Director' cell to span across and cover both the columns with the director names and headshots, also used further to indicate the cornetto trilogy in the edgar wright section-->
+			
+				<th scope="col" colspan="2">Director</th>
+				<th scope="col">Film</th>
+				<th scope="col">Release</th>
+			</tr>
+			<tr>
+			
+			<!--roswpan functions similarly to colspan, but merges vertically, it is used throughout this table, allowing the director headshot and name cells to span the entire height of the films I decided to include  -->
+			
+				<td rowspan="4">
+					<img src="images/akirakurosawa.jpg" alt="Akira Kurosawa" class="headshot">
+				</td>
+				<th scope="row" rowspan="4" id="kurosawa">Akira Kurosawa</th>
+				<td>Rashomon</td>
+				<td>1950</td>
+			</tr>
+			<tr>
+				<td>Ikiru</td>
+				<td>1952</td>
+			</tr>
+			<tr>
+				<td>Seven Samurai</td>
+				<td>1954</td>
+			</tr>
+			<tr class="group-end">
+				<td>Ran</td>
+				<td>1985</td>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<img src="images/martinscorsese.jpg" alt="Martin Scorsese" class="headshot">
+				</td>
+				<th scope="row" rowspan="3" id="scorsese">Martin Scorsese</th>
+				<td>Raging Bull</td>
+				<td>1980</td>
+			</tr>
+			<tr>
+				<td>Goodfellas</td>
+				<td>1990</td>
+			</tr>
+			<tr class="group-end">
+			
+			<!-- <sup>, used below, lets you add superscript text which sits slightly above and is styled differently to the standard text, used in this case as a reference marker to point at the footnate below the table identifying films that won best picture at the academy awards -->
+			
+				<td>The Departed<sup>1</sup></td>
+				<td>2006</td>
+			</tr>
+			<tr>
+				<td rowspan="4">
+					<img src="images/coenbrothers.jpg" alt="Joel &amp; Ethan Coen" class="headshot">
+				</td>
+				<th scope="row" rowspan="4" id="coens">The Coen Brothers</th>
+				<td>Fargo</td>
+				<td>1996</td>
+			</tr>
+			<tr>
+				<td>The Big Lebowski</td>
+				<td>1998</td>
+			</tr>
+			<tr>
+				<td>O Brother, Where Art Thou?</td>
+				<td>2000</td>
+			</tr>
+			<tr class="group-end">
+				<td>No Country for Old Men<sup>1</sup></td>
+				<td>2007</td>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<img src="images/quentintarantino.jpg" alt="Quentin Tarantino" class="headshot">
+				</td>
+				<th scope="row" rowspan="3" id="tarantino">Quentin Tarantino</th>
+				<td>Reservoir Dogs</td>
+				<td>1992</td>
+			</tr>
+			<tr>
+				<td>Pulp Fiction</td>
+				<td>1994</td>
+			</tr>
+			<tr class="group-end">
+				<td>Inglourious Basterds</td>
+				<td>2009</td>
+			</tr>
+			<tr class="group-indicator">
+				<td rowspan="5">
+					<img src="images/edgarwright.jpg" alt="Edgar Wright" class="headshot">
+				</td>
+				<th scope="row" rowspan="5" id="wright">Edgar Wright</th>
+				<td colspan="2"  style="text-align: center; color: #9AA3AD">Cornetto Trilogy</td>
+			</tr>
+			<tr>
+				<td>Shaun of the Dead</td>
+				<td>2004</td>
+			</tr>
+			<tr>
+				<td>Hot Fuzz</td>
+				<td>2007</td>
+			</tr>
+			<tr class="group-indicator">
+				<td>The World's End</td>
+				<td>2013</td>
+			</tr>
+			<tr class="group-end">
+				<td>Scott Pilgrim vs. the World</td>
+				<td>2010</td>
+			</tr>
+		</table>
+		<p><sup>1</sup> Best Picture winner</p>
+		</div>
+	  </article>
+    </main>
+    <footer role="contentinfo">
+		<p><i>BaumanS 2026 - COMP 484</i></p>
+    </footer>
+  </body>
+</html>
 

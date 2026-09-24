@@ -1,0 +1,161 @@
+* {
+	font-family: Arial, Verdana, sans-serif;
+
+}
+
+/*
+palette
+
+	background (off-black) #121417 /  18,20,23
+	surfaces (dark grey) #1C2026 / 28,32,38
+	Gold accents #D9A441 / 217,164,65
+	Darker gold (hover accents) #3D2B08 / 61,43,8
+	crimson #9E2B3F / 158,43,63
+	text (offwhite) #E8E6E1 / 232,230,225
+	muted text (light gray) #9AA3AD / 154,163,173
+*/
+
+body {
+	margin: 0;
+	background-color: #121417;
+	color: #E8E6E1;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header h1 {
+	padding-left: 1rem;
+	color: #9E2B3F;
+	font-family: Georgia;
+	font-size: 3em;
+	flex: 1 1 0;
+	min-width: 320px;
+}
+
+header .spacer {
+	flex: 1 1 0;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  justify-content: center;
+  background-color: #1C2026;
+  border-radius: 15px;
+  padding-left: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #D9A441;
+  font-weight: bold;
+}
+
+nav a:hover {
+	color: #E8E6E1;
+}
+
+nav a.current {
+	color: #E8E6E1;
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+main section {
+	background-color: #1C2026;
+	border-radius: 15px;
+	padding: 0.75rem;
+	margin-bottom: 2rem;
+}
+
+main p {
+	text-indent: 2em;
+}
+
+table { 
+	margin: 0 auto;
+	background-color: #1C2026;
+	font-size: 1.5em;
+	border-collapse: collapse;
+}
+
+/*currently overriding margin: 0 auto; from table on director page*/
+.table-wrap {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.order-column { 
+	background-color: #9E2B3F; 
+}
+
+
+th, td {
+	padding: 0.5rem 1rem;
+	border: 1px solid #9AA3AD; 
+}
+
+th[scope="row"] {
+	color: #D9A441;
+}
+
+.group-end td {
+	border-bottom: 3px solid #D9A441;
+}
+
+.group-indicator td {
+	border-bottom: 3px solid #9E2B3F;
+}
+
+sup {
+	color: #D9A441;
+}
+
+.headshot {
+	width: 120px;
+	display: block;
+	margin: 0 auto 0.5rem;
+}
+
+.poster {
+	width: 200px;
+	display: block;
+}
+
+footer {
+	background-color: #1C2026;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+footer p {
+	margin: 0;
+}
+
+.director-link {
+	color: #E8E6E1;
+	text-decoration: none;
+}
+
+.director-link:hover {
+	color: #D9A441;
+}

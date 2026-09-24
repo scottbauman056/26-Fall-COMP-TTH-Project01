@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Film Site - Favorite Films</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+		<h1>My Film Site</h1>
+		<nav role="navigation">
+			<ul>
+				<li><a href="index.html" title="Home page">Home</a></li>
+				<li><a href="films.html" class="current" title="Favorite Films">My Favorite Films</a></li>
+				<li><a href="directors.html" title="Favorite Directors">My Favorite Directors</a></li>
+				<li><a href="watchlist.html" title="Watchlist">My Watchlist</a></li>
+			</ul>
+		</nav>
+		<div class="spacer"></div>
+	</header>
+    <main role="main">
+      <article role="article">
+		<table>
+		
+		<!-- Below is one of the uses of <caption>, it functions as essentially a title for the table that is programmatically linked to it, for benefit of screen readers, etc., rather than a disassociated heading that happens to be sitting above it-->
+		
+			<caption style="font-size: 1.75em; font-weight: bold">My Favorite Films, Ranked</caption>
+			
+			<!-- below is <colgroup>, it is a feature that groups a set of column definitions, where each <col> represents one column, and allows you to style each column individually, represented in this case by styling the first column with a red background-->
+			<colgroup>
+				<col class="order-column">
+				<col>
+				<col>
+				<col>
+			</colgroup>
+
+
+			<!-- scope is a way of telling screen readers and programs what a header cell labels, visually we can typically infer that 'Title' is a column header in a table, and '1' is a row header in terms of ranking, but scope is how we relay that information programmatically, as a side benefit it also provides a styling hook, which I used to color the font gold for scoped row headers on this site.-->
+
+			<tr>
+				<th scope="col">Rank</th>
+				<th scope="col" colspan="2">Film</th>
+				<th scope="col">Year</th>
+				<th scope="col">Director(s)</th>
+			</tr>
+
+			<tr>
+				<th scope="row">1</th>
+				<td><img src="images/bttf.jpg" alt="Back to the Future" class="poster"></td>
+				<td>Back to the Future</td>
+				<td>1985</td>
+				<td>Robert Zemeckis</td>
+			</tr>
+
+			<tr>
+				<th scope="row">2</th>
+				<td><img src="images/hotfuzz.jpg" alt="Hot Fuzz" class="poster"></td>
+				<td>Hot Fuzz</td>
+				<td>2007</td>
+				<td><a href="directors.html#wright" class="director-link">Edgar Wright</a></td>
+			</tr>
+
+			<tr>
+				<th scope="row">3</th>
+				<td><img src="images/biglebowski.jpg" alt="The Big Lebowski" class="poster"></td>
+				<td>The Big Lebowski</td>
+				<td>1998</td>
+				<td><a href="directors.html#coens" class="director-link">Joel &amp; Ethan Coen</a></td>
+			</tr>
+  
+			<tr>
+				<th scope="row">4</th>
+				<td><img src="images/pulpfiction.jpg" alt="Pulp Fiction" class="poster"></td>
+				<td>Pulp Fiction</td>
+				<td>1994</td>
+				<td><a href="directors.html#tarantino" class="director-link">Quentin Tarantino</a></td>
+			</tr>
+  
+			<tr>
+				<th scope="row">5</th>
+				<td><img src="images/goodfellas.jpg" alt="Goodfellas" class="poster"></td>
+				<td>Goodfellas</td>
+				<td>1990</td>
+				<td><a href="directors.html#scorsese" class="director-link">Martin Scorsese</a></td>
+			</tr>
+		</table>
+      </article>
+    </main>
+    <footer role="contentinfo">
+		<p><i>BaumanS 2026 - COMP 484</i></p>
+    </footer>
+  </body>
+</html>
 
