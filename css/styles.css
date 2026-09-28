@@ -159,3 +159,39 @@ footer p {
 .director-link:hover {
 	color: #D9A441;
 }
+
+.director-external-link {
+	color: #D9A441;
+	text-decoration: none;
+}
+
+.director-external-link:hover {
+	color: #E8E6E1;
+}
+
+.poster-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+}
+	
+.poster-grid figure {
+	margin: 0;
+	text-align: center;
+	width: 250px;
+}
+
+.poster-grid figure img {
+	width: 250px;
+	height: 375px;
+	}
+	
+.film-name {
+	color: #D9A441;
+}
+
+
+
+
+
